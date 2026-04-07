@@ -1,0 +1,64 @@
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.hero {
+  margin-bottom: 5rem;
+  animation: fadeUp 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.hero-title {
+  font-size: 5rem;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+}
+
+/* Staggered animation for grid items */
+.tools-grid .tool-card:nth-child(1) { animation: fadeUp 1s cubic-bezier(0.22, 1, 0.36, 1) 0.1s both; }
+.tools-grid .tool-card:nth-child(2) { animation: fadeUp 1s cubic-bezier(0.22, 1, 0.36, 1) 0.2s both; }
+.tools-grid .tool-card:nth-child(3) { animation: fadeUp 1s cubic-bezier(0.22, 1, 0.36, 1) 0.3s both; }
+
+.footer {
+  text-align: center;
+  padding: 4rem 2rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border-color);
+  margin-top: 4rem;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .main-content {
+    padding: 3rem 1.5rem;
+  }
+}
