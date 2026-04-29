@@ -13,6 +13,11 @@ function App() {
       title: "供应商验货系统",
       description: "生成检验报告并支持在线查看及 PDF 下载的内部 QC 协同应用。",
       url: "https://qc.herrabox.xyz",
+    },
+    {
+      title: "智能推广图生成",
+      description: "一键将原始产品图片转化为可直接用于推广投放的营销素材。",
+      url: "https://photoshop.herrabox.xyz",
     }
   ];
 
