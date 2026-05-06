@@ -18,6 +18,11 @@ function App() {
       title: "智能推广图生成",
       description: "一键将原始产品图片转化为可直接用于推广投放的营销素材。",
       url: "https://photoshop.herrabox.xyz",
+    },
+    {
+      title: "产品数据助手",
+      description: "快速采集、结构化整理与管理产品核心数据，提升业务处理效率。",
+      url: "https://product.herrabox.xyz",
     }
   ];
 
